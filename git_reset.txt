@@ -1,0 +1,30 @@
+#!/bin/sh
+set -e
+git config -f .gitmodules --get-regexp '^submodule\..*\.path$' |
+    while read path_key path
+    do
+        url_key=$(echo $path_key | sed 's/\.path/.url/')
+        url=$(git config -f .gitmodules --get "$url_key")
+        echo $path
+        rm -rf $path
+        rm -rf .git/modules/$path
+        git rm --cached -r -f $path || echo $path
+        git submodule add -f $url $path 
+    done
+
+[0;34mℹ️ [2025-04-22 11:23:27] Scelto blocco HEAD (14 linee vs 1)[0m
+#!/bin/sh
+set -e
+git config -f .gitmodules --get-regexp '^submodule\..*\.path$' |
+    while read path_key path
+    do
+        url_key=$(echo $path_key | sed 's/\.path/.url/')
+        url=$(git config -f .gitmodules --get "$url_key")
+        echo $path
+        rm -rf $path
+        rm -rf .git/modules/$path
+        git rm --cached -r -f $path || echo $path
+        git submodule add -f $url $path 
+    done
+
+[0;34mℹ️ [2025-04-22 11:23:27] Scelto blocco incoming (1 linee vs 1)[0m

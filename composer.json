@@ -1,0 +1,45 @@
+{
+    "name": "laraxot/bashscripts_fila3",
+     "authors": [
+{
+    "name": "laraxot/bashscripts_fila3",
+    "autoload": {
+        "psr-4": {
+            "Laraxot\\BashscriptsFila3\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "marco76tv",
+            "email": "marco.sottana@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "larastan/larastan": "^3.0"
+    }
+}
+{
+    "name": "laraxot/bashscripts_fila3",
+    "autoload": {
+        "psr-4": {
+            "Laraxot\\BashscriptsFila3\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "marco76tv",
+            "email": "marco.sottana@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            
+        }
+    },
+    "require": {
+        
+    },
+    "require-dev": {
+        "larastan/larastan": "^3.0"
+    }
+}
